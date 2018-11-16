@@ -1,0 +1,141 @@
+\documentclass{nreport}
+
+\usepackage{cmap}
+\usepackage[T2A, T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian, english]{babel}
+
+%% temporary 
+%\usepackage{ucs}
+%% --------------
+
+%% Mathematics
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{lipsum}
+\usepackage{amsfonts}
+%% ------------------
+
+%% graphics
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf, .jpg, .png}
+%% -----------------------------------------
+
+%% Fonts
+%\usepackage{imfellEnglish}
+
+\usepackage{newpxtext,newpxmath}
+%\usepackage{newpxmath}
+%\usepackage{paratype}
+%\usepackage{mathpazo}
+
+%\usepackage{tgpagella}
+%% --------------------
+
+%% -
+\usepackage{url}      %% Hyperlinks
+\usepackage{listings} %% Source code highlighting
+\setlength{\emergencystretch}{0.6cm}
+
+
+\title{Title}
+\author{Dema Nikolay}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+
+See \nameref{ch2}
+
+\lipsum[1]
+
+\section{Introduction}
+
+This document is a sample document to test font families and font typefaces. This text uses a different font typeface. This document is a sample document to test font families and font typefaces. This text uses a different font typeface. k
+
+\lipsum[2]
+
+\section{Math}
+
+Let us suppose that $x^2+y^2=z^2$. Then
+\begin{equation}
+\biggl\langle u\biggm|\sum_{i=1}^nF(e_i,v)e_i\biggr\rangle
+    =F\biggl(\sum_{i=1}^n\langle e_i|u\rangle e_i,v\biggr).
+\end{equation}
+
+\chapter{Second chapter}\label{ch2}
+
+\lipsum[3]
+
+\section{First section}
+
+\lipsum[4]
+
+$$
+\omega = \sum_\alpha^\phi {CRXVB}
+$$
+
+\begin{align*}
+RQSZ \\
+\mathcal{RQSZ} \\
+\mathfrak{RQSZ} \\
+\mathbb{RQSZ}
+\end{align*}
+
+\subsection{First subsection}
+
+\lipsum[5]
+
+\begin{align*}
+3x^2 \in R \subset Q \\
+\mathnormal{3x^2 \in R \subset Q} \\
+\mathrm{3x^2 \in R \subset Q} \\
+\mathit{3x^2 \in R \subset Q} \\
+\mathbf{3x^2 \in R \subset Q} \\
+\mathsf{3x^2 \in R \subset Q} \\
+\mathtt{3x^2 \in R \subset Q} 
+\end{align*}
+
+\rus{В 1930 году Паули высказал предположение о том, что может существовать легкая электрически нейтральная частица, которая и уносит недостающую энергию. Он назвал эту частицу нейтрон (в последствии -- нейтрино). Он сформировал свое предложение в письме к Тюбингемскому научному конгрессу (под катом). Примечательны обращения «Dear radioactive ladies and gentlemen», «dear radioactives», а так же причина, по которой сам мистер Паули не явился на конгресс. У него ночью намечался бал. Дамы не будут ждать, пока ты тут новую частицу открываешь.}
+
+\chapter{\textnormal{We \textsf{have} \texttt{several} \textsc{fonts}
+  \textit{at} \textbf{disposal}}}
+The serified roman font is used for the main body of the text.
+\textit{Italics are typically used to denote emphasis or
+quotations.} \texttt{The teletype font is typically used for source
+code listings.} The \textbf{bold}, \textsc{small-caps} and
+\textsf{sans-serif} variants of the base roman font can be used to
+denote specific types of information.
+
+\tiny We \scriptsize can \footnotesize also \small change \normalsize
+the \large font \Large size, \LARGE although \huge it \Huge
+is \huge usually \LARGE not \Large necessary.\normalsize
+
+A wide variety of mathematical fonts is also available, such as: \[
+  \mathrm{ABC}, \mathcal{ABC}, \mathbf{ABC}, \mathsf{ABC},
+  \mathit{ABC}, \mathtt{ABC}
+\] By loading the \textsf{amsfonts} packages, several additional
+fonts will become available: \[
+  \mathfrak{ABC}, \mathbb{ABC}
+\] Many other mathematical fonts are available\footnote{
+   Here: \url{http://tex.stackexchange.com/a/58124/70941}.
+}.\\
+
+\url{http://www.tug.dk/FontCatalogue/mathfonts.html}
+
+\url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}
+
+%\url{ftp://tug.ctan.org/pub/tex-archive/info/Free_Math_Font_Survey/survey.html}
+
+\url{http://www.tug.dk/FontCatalogue/}
+
+\url{https://www.overleaf.com/learn/latex/Font_typefaces}
+
+\end{document}
