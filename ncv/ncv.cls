@@ -82,22 +82,24 @@
 \parbox[t]{0.25\textwidth}{
     \includegraphics[align=t, width=0.7\linewidth]{\@Photo}
 	}%
-	& \parbox[t]{0.38\textwidth}{
-	    \vspace{0cm}
-	    \Large
-		\onehalfspacing
-		{\huge \@FullName}\\
-		\faEnvelopeSquare \ \@Mail\\
-		\faGithubSquare \ \@GitHub\\
-		\faPhone \ \@Phone\\
-	}
-	& \parbox[t]{0.33\textwidth}{
+	& \parbox[t]{0.45\textwidth}{
 	    \vspace{0cm}
 	    \Large
 	    \onehalfspacing
-		{\huge \emptystring}
-		\faYoutubePlay \ \@YouTube\\
+		{\huge \@FullName}\vspace{0.3cm}\\
+% 		{\vspace*{1em}}
+% 		{\tiny \emptystring}
+% 		\vspace{0.4cm}
+		\faEnvelope \ \@Mail\\
 		\faPaperPlane \ \@Telegram\\
+		\faPhone \ \hspace{0.1mm} \@Phone\\
+	}
+	& \parbox[t]{0.3\textwidth}{
+	    \vspace{0cm}
+	    \Large
+	    \onehalfspacing
+		{\huge \emptystring \vspace{0.3cm}}
+		\faYoutubePlay \ \@YouTube\\
 		\faInstagram \hspace{1mm} \@Instagram
 	}
 \end{three_col_entry_list}}

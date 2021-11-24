@@ -7,18 +7,21 @@
 \usepackage{fontawesome}
 \usepackage{setspace}
 \usepackage{enumitem}
+\usepackage{hyperref}
+
+\usepackage[dvipsnames]{xcolor}
 
 \graphicspath{{img/}}
 \DeclareGraphicsExtensions{.pdf, .jpg, .png}
 
 \name{Nikolay Dema}
-\photo{cv_v2}
+\photo{25_h_2}
 \mail{ndema2301@gmail.com}
-\github{github.com/NickoDema}
+\github{\href{https://github.com/NickoDema}{github.com/NickoDema}}
 \phone{+79816810652}
-\youtube{goo.gl/j6Ac4W}
-\telegram{@nicko\_dema}
-\instagram{@nicko\_dema}
+\youtube{\href{https://www.youtube.com/channel/UCiGwbcr2f2ON77etnY-aVxw}{goo.gl/j6Ac4W}}
+\telegram{\href{https://t.me/nicko_dema}{@nicko\_dema}}
+\instagram{\href{https://www.instagram.com/nicko_dema/}{@nicko\_dema}}
 
 
 \begin{document}
@@ -31,6 +34,8 @@
 
 \header
 
+\ 
+
 \section{Education}
 \begin{two_col_entry_list}
 	\entry
@@ -38,48 +43,72 @@
 		{\textbf{Bachelor's Degree} in Mechatronics and Robotics, ITMO University, \\ Department of Control Systems and Informatics, St. Petersburg, Russia}
 \end{two_col_entry_list}
 
+\ 
 
-\section{Work}
+\section{Work Experience}
 \begin{two_col_entry_list}
+    \entryh
+		{2021 may -- now}
+		{JSC NIIAS, System Architect}
+		{}
+		{Software architecture improvements and low-level protocols development for on-board control and computing systems of autonomous shunting locomotives.
+		}
+    \entryh
+		{2020 sep. -- now}
+		{ScPA StarLine, Tech Lead}
+		{}
+		{Management of a small R\&D group of 6 employees of \textcolor{MidnightBlue}{\href{https://smartcar.starline.ru/en/oscar-en}{OSCAR}} project.\\[1.5mm]
+		\textcolor{MidnightBlue}{\href{https://alpha.starline.ru/}{Alpha}} drive-by-ware kit Launch.\\[1.5mm]
+		Organization of joint events and educational programs with local universities.
+		}
+    \entryh
+		{2019 aug. -- 2020 aug.}
+		{ScPA StarLine, Robotics Research Engineer}
+		{}
+		{API design and low-level driver development for brand-new drive-by-wire system for autonomous vehicles. Architecture improvements of self-driving software stack.
+		}
     \entryh
 		{2018 aug. -- 2019 jul.}
 		{goTRG, Robotics Software Engineer}
 		{}
-		{Developed navigation software from high level hardware drivers and sensor fusion to localization and motion planing and control as well as human-following functional and a network API for a differential drive AGV.
+		{Development of navigation software from low level hardware drivers and sensor fusion to motion planing and localization for a differential drive AGV.\\[1.5mm]
+		Participation in the development of an orchestration level software to control heterogeneous fleet of robots in a logistics warehouses and distribution centers.
+% 		as well as human-following functional and a network API for a differential drive AGV.
 		}
     \entryh
 		{2017 sep. -- 2018 dec.}
 		{ITMO University, Research Engineer}
 		{}
-		{Conducting research on motion planning and control for kinematically redundant manipulators (supported by RSF, project No. 17-79-20341).\\[1mm] 
-		Developed data encryption protocol for cyber-physical systems based on SCW quantum key distribution system (supported by the Government of the Russian Federation, Grant 08-08) 
-		%Analyzed the data from an IMU sensor attached to a human wrist to catch its 6DoF pose.
+		{Research conduction on motion planning and control for kinematically redundant manipulators (supported by RSF, project No. 17-79-20341).\\[1.5mm] 
+		Development of data encryption protocol for cyber-physical systems based on SCW quantum key distribution (supported by the Government of the Russian Federation, Grant 08-08) 
 		}
 	\entryh
 		{2016 sep. -- 2017 aug.}
 		{ITMO University, Laboratory Assistant}
 		{}
-		{Developed shared control system for a motorized wheelchair to  prevent collisions with obstacles during movement in a complex dynamic environment.\\[1mm]
-		Participated in the development of the telepresence robot with AR interface, designed a navigation system for remotely operated and autonomous modes.}
+		{Development of shared control system for a motorized wheelchair to  prevent collisions with obstacles during movement in a complex dynamic environment.\\[1.5mm]
+		Participation in the development of the telepresence robot with AR interface, designed a navigation system for remotely operated and autonomous modes.}
 \end{two_col_entry_list}
 
+\ 
 
+% \newpage
 \section{Technical Skills}
 \begin{two_col_entry_list}
 	\entry
 		{Languages}
-		{Python, C++, Matlab, Latex}
+		{C++, Python, Matlab, Bash, Latex}
 	\entry
 		{Tools}
-		{Linux, ROS, Docker, Git, Atlassian Stack, Gazebo, V-rep, Stage, SolidWorks, Blender.}
+		{Linux, ROS, ROS2, OpenCV, Apollo(CyberRT), Docker, {\O}MQ, Git, CAN, CANOpen, Serial,  Atlassian Stack, Gazebo, V-rep, Stage, SolidWorks, Blender, UE4.}
 	\entry
 		{Practical\\ experience}
 		{
 		%\textbf{Hardware:} 
-		Kuka YouBot, UR10, Festo Robotino, Nanotec, Roboteq, Velodyne, Hokuyo, Dynamixel, RealSense, Nvidia Jetson, RPlidar, Sharp.}
+		Kuka YouBot, UR, Festo Robotino, Nanotec, Roboteq, Velodyne, Ouster, Hokuyo, Dynamixel, RealSense, Kobuki, Orbbec.}
 	\entry
-		{Research\\ topics}
-		{Motion planing and control, computer vision, navigation, sensing, artificial intelligence, human-robot interaction, bio-inspired robotics, neuroscience, computer graphics.}
+		{Research\\ Interests}
+		{Cognitive neuro-robotics, human-robot interaction, edge computing, computer graphics.}
 \end{two_col_entry_list}
 
 
@@ -96,15 +125,25 @@
 \section{Communication and Leadership}
 \begin{two_col_entry_list}
     \entryhc
-		{2017, 2018}
-		{RoboCup team captain}
+        {2021, 2022}
+		{Technical Committee member of the \textcolor{MidnightBlue}{\href{https://yandex.ru/profi/}{"Ya - Professional"}}}
 		{}
-		{Captain of the "RED" team in RoboCup@Work league. Developed a tactic level software (control of the whole robot to execute a complex operation) as well as a navigation system for omni-directional mobile robot.}
+		{Technical preparations of tasks for the Ya - Professional competitors in the robotics subgroup.}
+    \entryhc
+		{2020}
+		{\textcolor{MidnightBlue}{\href{https://robofinist.ru/event/info/media/id/339}{Self-Driving StarLine Competition organization}}}
+		{}
+		{Technical and organizational preparation of one of the largest student competitions in the field of autonomous transport in Russia.}
+    \entryhc
+		{2017, 2018}
+		{RoboCup@Work Captain of the \textcolor{MidnightBlue}{\href{https://red-itmo.github.io/}{RED Team}}}
+		{}
+		{Teamwork organization. Development of an orchestration level software and navigation subsystem for an omnidirectional mobile robot.}
     \entryhc
 		{2016 sep. -- 2018 dec.}
 		{Student robotics laboratory supervisor}
 		{}
-		{Led many student projects in such topics as mobile robot navigation, computer vision and manipulation.}
+		{Led many student projects in such topics as mobile robot motion planning and control, computer vision and manipulation.}
 \end{two_col_entry_list}
 
 
